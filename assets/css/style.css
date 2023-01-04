@@ -181,7 +181,17 @@ label{
     height: 50px;
     background-color: rgb(18, 195, 227);
     color: #fff;
+    box-shadow: 0 3px 0 rgb(3, 154, 181);
+    transition: all .3s ease;
 }
+.blue:hover{
+    color: #fff;
+    background-color: rgb(14, 160, 185);
+}
+
+
+
+
 .about-list-item{
     margin-top: 35px;
 }
@@ -191,10 +201,44 @@ label{
     border-radius: 5px;
     padding: 12px 16px;
     text-align: center;
-    display: inline-block;
+    display: block;
     margin-top: 20px;
     width: 160px;
+    position: relative;
+    background: none;
+    z-index: 1;
 }
+.more,
+.more::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.more::before,
+.more::after {
+  background: #c63804;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.more:hover {
+  color: #fff;
+}
+
+.more::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.more:hover:after {
+  height: 100%;
+}
+
 .about-list-item li{
     margin: 15px 0;
 }
@@ -469,6 +513,64 @@ label{
     align-items: center;
     justify-content: center;
 }
-.login i{
+.login i,.cart i{
     margin-right: 7px;
+}
+.cart{
+    display: inline-flex;
+    color: rgb(30, 199, 229);
+    align-items: center;
+    justify-content: center;
+
+}
+footer{
+    background-color:#1e1e1e ;
+    color: #fff;
+    padding: 50px 0 0 0;
+}
+footer p{
+    font-size: 14px;
+    opacity: .7;
+    width: 90%;
+}
+footer .logo{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+footer ul{
+    padding: 0;
+    width: fit-content;
+}
+footer ul li{
+    margin: 10px 0;
+}
+footer h4{
+    width: 70%;
+    color:rgb(30, 199, 229);
+    border-bottom: 2px solid #c63804;padding-bottom: 10px;
+}
+footer ul li a{
+    color: #fff;
+}
+footer ul li a:hover{
+    color: #c63804;
+}
+.social-media-icons{
+    margin-top: 50px;
+    border-top: 1px solid rgba(175, 228, 238, 0.121);
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media-icons ul{
+    display: flex;
+}
+.social-media-icons ul li{
+    margin: 0 10px;
+}
+
+.footer-list ul li a i{
+    font-size: 12px;
+    margin-right: 5px;
 }
