@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family:Montserrat ;
+    src: url(../font/Montserrat-ExtraBold.ttf);
+    font-weight: bold;
+}
+
 html {
     overflow-x: hidden !important;
     scroll-behavior: smooth;
@@ -160,9 +166,11 @@ nav ul li a:hover,nav ul li.active a{
     transition: border 1s ease-out;
     border: none;
     font-weight: 700;
-    background-color: #ff9670;
+    background-color: #f3d41b;
     padding: 0 0 0 42px;
     font-size: 24px;
+    font-family: Montserrat;
+    font-weight: bold;
 }
 .home-page .booking-widget .unknown-reg {
     color: #fff;
@@ -360,6 +368,41 @@ label{
     transform: rotate(45deg);
     margin-left: -6px;
 }
+@media screen and (max-width:768px){
+    .service{
+        flex-wrap: wrap;
+    }
+    .service div{
+        width: 100%;
+        overflow: hidden;
+    }
+    .service div div{
+        width: 100%;
+        padding: 10px;
+    }
+    .service#first-row div:nth-child(2) img{
+        order: 2;
+    }
+    .service#second-row div:nth-child(1) img{
+        order: 1 ;
+    }
+    .service#second-row div:nth-child(1) div{
+        order: 2 ;
+    }
+
+    .service div h6{
+        font-size: 15px;
+    }
+    .service div p{
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.5;
+    }
+    .service div a{
+        font-size: 12px;
+    }
+    
+}
 #about{
     padding: 150px 0 0 0;
 }
@@ -411,6 +454,7 @@ label{
     background-attachment: fixed;
 
 }
+
 #service::after{
     content: '';
     position: absolute;
@@ -454,6 +498,17 @@ label{
     height: 40px;
     border-radius: 5px;
 }
+@media screen and (max-width:768px){
+    #service{
+    height: fit-content;
+    background-size: contain;
+        background-color: #000;
+    }
+    .service-item{
+        margin: 10px 0;
+    }
+}
+
 .title{
     display: flex;align-items: center;
 }
@@ -461,6 +516,9 @@ label{
     width: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    background-color: #c63804;
+
 }
 .contact-info > div{
     flex: 1;
@@ -469,12 +527,23 @@ label{
     background-color: #1e1e1e;
     color: #fff;
     align-items: center;
+    height: 100%;
 }
 .contact-info > div:nth-child(2){
     background-color: #c63804;
 }
 .contact-info > div img{
     margin: 0 30px;
+}
+
+@media screen and (max-width:768px){
+    .contact-info{
+        flex-wrap: wrap;
+    }
+    .contact-info > div{
+        width: 100%;
+        flex: none;
+    }
 }
 .why-us .heading{
     align-items: flex-start;
@@ -573,4 +642,85 @@ footer ul li a:hover{
 .footer-list ul li a i{
     font-size: 12px;
     margin-right: 5px;
+}
+
+.mobile-header{
+    display: none;
+}
+
+.open-menu{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+}
+@media screen and (max-width:768px){
+    .mobile-header{
+        display: block;
+    }
+    .brands{
+        width: 100%;
+        /* flex-wrap: wrap; */
+    }
+    .brands div{
+        width: 33%;
+    }
+    .heading h2{
+        font-size: 2em;
+    }
+    .heading p{
+        font-size: 16px;
+    }
+    .heading{
+        margin: 25px 0;
+    }
+    .bg-image{
+        padding: 25px;
+        flex-direction: column;
+        padding-top: 150px;
+    }
+    .bg-image h1{
+        font-size: 30px;
+    }
+    .hero-details{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .bg-image p{
+        font-size: 14px;
+    }
+    .form{
+        position: relative;
+        width: 95%;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px auto; 
+        bottom: auto;
+        right: auto;
+    }
+    .bg-image{
+        background-size: contain;
+        height: fit-content;
+        background-color: #1e1e1eda;
+    }
+    .bg-image::after{
+        background: linear-gradient(to top,#1e1e1e,#1e1e1eb6);
+
+    }
+    section{
+        padding: 70px 0;
+    }
+    .feature-item div{
+        width: 48%;
+        padding: 15px;
+    }
+    .feature-item > div h4{
+        font-size: 18px;
+    }
+    .desktop-header{
+        display: none;
+    }
+    .logo img{
+        width: 120px;
+    }
 }
