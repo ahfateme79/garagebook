@@ -9,6 +9,12 @@
     src: url(../font/Montserrat-ExtraBold.ttf);
     font-weight: bold;
 }
+@font-face {
+    font-family:Montserrat ;
+    src: url(../font/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+
 
 html {
     overflow-x: hidden !important;
@@ -757,6 +763,40 @@ footer ul li a:hover{
     border: none;
     font-size: 25px;
 }
+.vehicle-info{
+    margin: 10px 0;
+}
+.vehicle-info label{
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(234, 239, 240);
+}
+.vehicle-info input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(204, 204, 204, 0.283);
+    padding: 0 10px;
+    font-family: Montserrat;
+    font-weight: normal;
+    background-color: transparent;
+    color: #fff;
+    cursor: default;
+}
+.form.info-form{
+    width: 50%;
+    background-color: #1e1e1e99;
+    border: none;
+    backdrop-filter: blur(10px);
+
+}
+.form.info-form button{
+    width: 60%;
+    background-color: #c63804;
+    box-shadow: 0 3px 0 #962800;
+    margin: 0 auto;
+}
 @media screen and (max-width:768px){
     .mobile-header{
         display: block;
@@ -792,7 +832,7 @@ footer ul li a:hover{
     .bg-image p{
         font-size: 14px;
     }
-    .form{
+    .form,.form.info-form{
         position: relative;
         width: 95%;
         padding: 15px;
@@ -826,4 +866,7 @@ footer ul li a:hover{
     .logo img{
         width: 120px;
     }
+}
+.text-primary{
+    color: rgb(14, 160, 185) !important;
 }

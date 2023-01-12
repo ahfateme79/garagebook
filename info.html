@@ -67,9 +67,11 @@
                         <div>
                             <div id="hamburger" onclick="this.classList.toggle('open');">
                                 <svg width="50" height="50" viewBox="0 0 100 100">
-                                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                    <path class="line line1"
+                                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                                     <path class="line line2" d="M 20,50 H 80" />
-                                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                                    <path class="line line3"
+                                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                                 </svg>
                             </div>
 
@@ -78,9 +80,10 @@
                                     <div>
                                         <a href="" class="cart"><i class="fa-solid fa-shopping-cart "></i> cart</a>
                                     </div>
-        
+
                                     <div>
-                                        <a href="" class="login ms-4"><i class="fa-sharp fa-solid fa-user"></i> Login</a>
+                                        <a href="" class="login ms-4"><i class="fa-sharp fa-solid fa-user"></i>
+                                            Login</a>
                                     </div>
                                 </div>
                                 <ul>
@@ -106,36 +109,64 @@
     <!-- stat hero -->
 
     <section class="p-0">
-        <div class="bg-image">
+        <div class="bg-image" style="background-image: url(./assets/img/bg-2-1.jpg);">
             <div class="hero-details wow slideInUp">
-                <h1><span>Compare Instant</span>
-                    Car Service
-                    Deals.</h1>
-                <p> >We are the leading auto parts company with the world-wide reputation <br>of premium quality
-                    products and maintenace services.
+                <h1>vehicle car</h1>
+                <p class="text-primary">products and maintenace services.
                 </p>
             </div>
 
 
 
-            <div class="form wow slideInRight">
+            <div class="form wow slideInRight info-form">
                 <form class="booking-widget white-text" style="cursor:default">
                     <div>
-                        <div class="bw-input vrm-input"><label>
-                                <div style="position:relative"><input name="VRM" maxlength="100" required="" type="text"
-                                        aria-label="Vehicle Registration" value="" class="invalid"
-                                        placeholder="Vehicle Registration"><span
-                                        style="display: inline-block; color: rgb(233, 29, 17); text-align: left; font-size: 16px; font-weight: 700; background-color: rgb(255, 255, 255); padding: 4px; margin-top: 4px; margin-bottom: 4px; border-radius: 3px;">
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col">
+                                <div class="vehicle-info">
+                                    <label for="">Make</label>
+                                    <input type="text" readonly value="AUDI">
                                 </div>
-                            </label></div>
-                        <div class="bw-input postcode-input"><label><span style="display:none;margin-bottom:2px">Enter
-                                    your postcode</span>
-                                <div style="position:relative"><input name="Postcode" maxlength="100"
-                                        placeholder="Enter your postcode" required="" type="text"
-                                        aria-label="Enter your postcode" value="" class="invalid"><span
-                                        style="display: inline-block; color: rgb(233, 29, 17); text-align: left; font-size: 16px; font-weight: 700; background-color: rgb(255, 255, 255); padding: 4px; margin-top: 4px; margin-bottom: 4px; border-radius: 3px;">
+                            </div>
+                            <div class="col">
+                                <div class="vehicle-info">
+                                    <label for="">Colour</label>
+                                    <input type="text" readonly value="BLACK">
                                 </div>
-                            </label></div><button type="submit" class="btn blue">Compare Prices Instantly</button>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col">
+                                <div class="vehicle-info">
+                                    <label for="">Fuel Type</label>
+                                    <input type="text" readonly value="PETROL">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="vehicle-info">
+                                    <label for="">Engin Capacity</label>
+                                    <input type="text" readonly value="2995">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col">
+                                <div class="vehicle-info">
+                                    <label for="">Mot Status</label>
+                                    <input type="text" readonly value="VALID">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="vehicle-info">
+                                    <label for="">Year Of Manufacture</label>
+                                    <input type="text" readonly value="2018">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn blue">Next</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -143,39 +174,6 @@
     </section>
 
     <!-- end hero -->
-    <!-- start contact-info -->
-
-    <section class="p-0">
-        <div class="contact-info">
-            <div>
-                <img src="https://angfuzsoft.com/wordpress/mechon/wp-content/uploads/2022/07/contact_1_1.svg" alt="">
-                <div>
-                    <p>WE ARE OPEN MONDAY-FRIDAY</p>
-                    <h3>7:00 am - 9:00 pm</h3>
-                </div>
-            </div>
-            <div>
-                <img src="https://angfuzsoft.com/wordpress/mechon/wp-content/uploads/2022/07/contact_1_2.svg" alt="">
-
-                <div>
-                    <p>HAVE A QUESTION?</p>
-                    <h3>+2546 214 21536</h3>
-                </div>
-            </div>
-            <div>
-                <img src="https://angfuzsoft.com/wordpress/mechon/wp-content/uploads/2022/07/contact_1_3.svg" alt="">
-
-                <div>
-                    <p>NEED A REPAIR? OUR ADDRESS</p>
-                    <h3>Liza Street, NewYork</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- end contact-info -->
-
-
 
 
     <!-- start footer -->
@@ -185,7 +183,7 @@
             <div class="row align-items-center g-3">
                 <div class="col-md-6 col-lg-5">
                     <div>
-                        <div><a href="" class="logo"><img src="./assets/img/chooper-logo-BNGXJ52.png" alt=""></a></div>
+                        <div><a href="" class="logo"><img src="./assets/img/london 7.webp" alt=""></a></div>
                         <div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
