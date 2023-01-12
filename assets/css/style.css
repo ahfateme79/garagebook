@@ -52,7 +52,6 @@ header{
     position: absolute;
     top: 0;
     z-index: 100;
-    padding: 20px 0;
 }
 .logo img{
     max-width: none !important;
@@ -570,6 +569,8 @@ label{
     display: flex;
     padding: 0;
     justify-content: flex-end;
+    position: relative;
+    z-index: 100;
   }
   #hamburger .line {
     fill: none;
@@ -624,6 +625,7 @@ label{
     z-index: -1;
     visibility: hidden;
     transition: all .3s ease;
+    z-index: 50;
   }
   .navigation-manu.open{
     right: 0;
@@ -869,4 +871,120 @@ footer ul li a:hover{
 }
 .text-primary{
     color: rgb(14, 160, 185) !important;
+}
+.service-item-select{
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.service-item-select div{
+    display: flex;
+    align-items: center;
+}
+.service-item-select div input{
+    accent-color: rgb(14, 160, 185);
+}
+.service-item-select div label{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.service-item-select div span{
+    color: #962800;
+    font-weight: 500;
+}
+.inp{
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+textarea{
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+ 
+}
+.book-form input[type='radio']{
+    width: 24px;
+    height: 24px;
+}
+.select_option {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+.nice-select {
+    width: 100%;
+}
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 5px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+.nice-select ul.list {
+    width: 100% !important;
+    height: 180px !important;
+    overflow: auto !important;
+}
+.nice-select:after{
+    right: 12px !important;
+    left: auto !important;
+}
+.current{
+    font-size: 18px;
+    opacity: .7;
+}
+.nice-select .option{
+    text-align: left !important;
+}
+.form-check{
+    display: flex;
+    align-items: flex-start;
+}
+.form-check label{
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.font{
+    font-family: Montserrat;
+    font-weight: bold;
+}
+.span{
+    font-size: 13px;
+}
+del{
+    font-size: 12px;
+    margin-right: 10px;
+    opacity: .7;
 }
