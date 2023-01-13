@@ -130,8 +130,9 @@
                                 <div class="col">
                                     <div class="service-item-select">
                                         <div>
-                                            <input type="checkbox"  value="1" name="service[1][]" />
-                                            <label for="service-1">Full service <i class="fa-solid fa-screwdriver-wrench"></i></label>
+                                            <input type="checkbox" value="1" name="service[1][]" />
+                                            <label for="service-1">Full service <i
+                                                    class="fa-solid fa-screwdriver-wrench"></i></label>
                                         </div>
                                         <div>
                                             <del>$200.00</del><span class="price"><strong>$ </strong>129.50</span>
@@ -141,7 +142,7 @@
                                 <div class="col">
                                     <div class="service-item-select">
                                         <div>
-                                            <input type="checkbox"  value="1" name="service[1][]" />
+                                            <input type="checkbox" value="1" name="service[1][]" />
                                             <label for="service-1">Interim service <i
                                                     class="fa-solid fa-wrench"></i></label>
                                         </div>
@@ -153,9 +154,9 @@
                                 <div class="col">
                                     <div class="service-item-select">
                                         <div>
-                                            <input type="checkbox"  value="1" name="service[2][]" />
+                                            <input type="checkbox" value="1" name="service[2][]" />
                                             <label for="service-1">Add a mot <i
-                                                class="fa-sharp fa-solid fa-table-list"></i></label>
+                                                    class="fa-sharp fa-solid fa-table-list"></i></label>
                                         </div>
                                         <div>
                                             <del>$200.00</del><span class="price"><strong>$ </strong>129.50</span>
@@ -190,6 +191,18 @@
                                     <div class="form-check form-check-inline">
                                         <input class="" type="checkbox" id="inlineCheckbox2" value="option2">
                                         <label class="form-check-label" for="inlineCheckbox2">exhaust</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="" type="checkbox" id="other" value="option2"
+                                            data-toggle="collapse">
+                                        <label class="form-check-label" for="other">other</label>
+                                    </div>
+                                    <div id="checkout_coupon" class="collapse mt-3" data-parent="#accordion">
+                                        <div class="checkout_info coupon_info">
+                                            <textarea class="pt-3" name="" id="" rows="4"
+                                                placeholder="Anything else?"></textarea>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -261,7 +274,7 @@
                                         <input type="email" placeholder="Email address" class="inp">
                                     </div>
                                 </div>
-                              
+
                                 <div class="col-12">
                                     <textarea class="pt-3" name="" id="" rows="5"
                                         placeholder="Anything else?"></textarea>
@@ -317,21 +330,27 @@
         //niceSelect
         $('.select_option').niceSelect();
 
-        $("input:checkbox").on('click', function() {
-  // in the handler, 'this' refers to the box clicked on
-  var $box = $(this);
-  if ($box.is(":checked")) {
-    // the name of the box is retrieved using the .attr() method
-    // as it is assumed and expected to be immutable
-    var group = "input:checkbox[name='" + $box.attr("name") + "']";
-    // the checked state of the group/box on the other hand will change
-    // and the current value is retrieved using .prop() method
-    $(group).prop("checked", false);
-    $box.prop("checked", true);
-  } else {
-    $box.prop("checked", false);
-  }
-});
+        $("input:checkbox").on('click', function () {
+            // in the handler, 'this' refers to the box clicked on
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                // the name of the box is retrieved using the .attr() method
+                // as it is assumed and expected to be immutable
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                // the checked state of the group/box on the other hand will change
+                // and the current value is retrieved using .prop() method
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }
+        });
+
+
+        // collps
+        $('#other').click(function () {
+            $('#checkout_coupon').toggleClass('show');
+        });
 
     </script>
 </body>

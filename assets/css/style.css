@@ -986,9 +986,10 @@ footer ul li a:hover {
     width: 24px;
     height: 24px;
 }
-
 input[type="checkbox"] {
     accent-color: #962800b3 !important;
+    position: relative;
+    z-index: 10;
 }
 
 .service-item-select div label {
@@ -1113,6 +1114,8 @@ textarea {
     display: inline-flex;
     align-items: center;
     padding-left: 0;
+    position: relative;
+    z-index: 10;
 
 }
 
