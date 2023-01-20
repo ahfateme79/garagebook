@@ -1286,13 +1286,13 @@ del {
     margin-bottom: 0 !important;
 }
 .contacts::after{
-    content: '';
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom,#000000,#00000000);
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.791);
 }
 .contact-section{
     position: relative;
@@ -1386,17 +1386,6 @@ table{
 .openorclosed:after {
     content:" open during these hours:";
 }
-.open {
-    color:green;
-}
-.open:after {
-    content:" Open";
-    color: #6C0;
-}
-.closed:after {
-    content:" Closed";
-    color: red;
-}
 .opening-hours-table tr td {
     padding:5px;
 }
@@ -1413,4 +1402,82 @@ table{
 }
 .text-primary {
     color: #fe4141!important;
+}
+
+.garage img{
+    width: 100%;
+}
+.garage {
+    position: relative;
+}
+.garage::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1ea7;
+}
+
+.contact-form-inner {
+    padding: 40px 40px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.contact-form-inner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.683);
+
+}
+.bg-overlay-2 {
+    position: relative;
+    background-size: cover !important;
+    z-index: 1;
+}
+.section-title {
+    margin-bottom: 55px;
+    position: relative;
+    z-index: 5;
+}
+.section-title .title {
+    margin-bottom: 0;
+    line-height: 60px;
+    margin-top: 0;
+}
+.section-title p{
+    opacity: .7;
+    line-height: 1.5 !important;
+}
+.single-contact-info {
+    margin-bottom: 42px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    z-index: 5;
+}
+.single-contact-info .thumb {
+    margin-right: 23px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    margin-top: 3px;
+}
+.single-contact-info .details h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+.single-contact-info .details p {
+    margin-bottom: 0;
+    color: #fff;
 }
