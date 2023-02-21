@@ -120,10 +120,11 @@
                     <p class="text-danger"><a href="" class="text-white">Home /</a> Booking
                     </p>
                 </div>
-                <div class="row row-cols-1">
-                    <div class="col">
+                <form action="" class="book-form p-0" style="background-color: transparent;width: 100%;">
 
-                        <form action="" class="book-form">
+                    <div class="row g-4 p-4" style="background-color: rgba(21, 22, 22, 0.6);">
+                        <div class="col-9">
+
                             <div>
                                 <p class="mb-0 text-white">please select a service for your <strong
                                         class="text-success">AUDI A5
@@ -244,7 +245,7 @@
                             <div class="row p-3 mt-3 g-4">
                                 <div class="col-12 col-md-6"><input type="date" placeholder="Select date" class="inp">
                                 </div>
-                               
+
                                 <div class="col-12 col-md-6">
                                     <div>
                                         <div class="select_form_select">
@@ -265,11 +266,14 @@
                                 <div class="col-12 col-md-6"><input type="text" placeholder="Last Name" class="inp">
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <div>
-                                        <input type="text" placeholder="Mobile" class="inp">
+                                    <div class="inp d-flex align-items-center pt-2 pb-2">
+                                        <span
+                                            class="h-100 border-end d-flex align-items-center justify-content-center pe-2">+44</span>
+                                        <input type="text" placeholder="Mobile"
+                                            class="bg-transparent shadow-0 border-0 ms-3 text-white">
                                     </div>
                                 </div>
-                               
+
                                 <div class="col-12 col-md-6">
                                     <div>
                                         <input type="email" placeholder="Email address" class="inp">
@@ -305,10 +309,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
+
+                        </div>
+                        <div class="col-3"></div>
 
                     </div>
-                </div>
+                </form>
             </div>
         </section>
 
