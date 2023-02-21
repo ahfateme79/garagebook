@@ -41,9 +41,6 @@ body {
     outline: none;
   }
   
-  p {
-    line-height: 1.9;
-  }
   
   blockquote {
     border-left: 5px solid #eee;
@@ -580,4 +577,8 @@ body {
   
   .page-item.disabled .page-link {
     border-color: #f4f4f4;
+  }
+  tbody.invoice td,tbody.invoice tr{
+    border: none !important;
+    font-weight: 500;
   }

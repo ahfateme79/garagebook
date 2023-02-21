@@ -1,179 +1,279 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="images/favicon.png" rel="icon" />
-<title>Train Booking Invoice - Koice</title>
-<meta name="author" content="harnishdesign.net">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="images/favicon.png" rel="icon" />
+  <title>Train Booking Invoice - Koice</title>
+  <meta name="author" content="harnishdesign.net">
 
-<!-- Web Fonts
+  <!-- Web Fonts
 ======================= -->
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900'
+    type='text/css'>
 
-<!-- Stylesheet
+  <!-- Stylesheet
 ======================= -->
-<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" type="text/css" href="./assets/css/invoice.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" type="text/css" href="./assets/css/invoice.css" />
 </head>
+
 <body>
-<!-- Container -->
-<div class="container-fluid invoice-container"> 
-  <!-- Header -->
-  <header>
-    <div class="row align-items-center">
-      <div class="col-sm-7 text-center text-sm-start mb-3 mb-sm-0"> <img id="logo" src="./assets/img/photo_2023-01-14_00-52-24-removebg-preview.png" title="Koice" alt="logo" width="100px" /> </div>
-      <div class="col-sm-5 text-center text-sm-end">
-        <h4 class="mb-0">Invoice</h4>
-        <p class="mb-0">Invoice Number - 16835</p>
+  <!-- Container -->
+  <div class="container-fluid invoice-container">
+    <!-- Header -->
+    <header>
+      <div class="row align-items-center">
+        <div class="col-sm-12 mb-3 mb-sm-0">
+          <h4>EASY FIT AUTO LTD
+          </h4>
+        </div>
+        <div class="col-sm-12 text-start mt-4">
+          <p class="mb-0 text-dark">1 Standford Street</p>
+          <p class="mb-0 text-dark">Southampton</p>
+          <p class="mb-0 text-dark">SO14 5FN
+          </p>
+        </div>
       </div>
-    </div>
-    <hr>
-  </header>
-  <main>
-    <p class="text-1 text-center text-muted">This e-ticket will only be valid along with an ID proof in original. if found travelling without ID proof, passenger will be treated as without ticket and charged as per extant Railway rules.</p>
-    <h4 class="text-4">Journey Details</h4>
-    <div class="table-responsive">
-      <table class="table table-bordered text-1 table-sm table-striped">
-        <thead>
-          <tr>
-            <td colspan="4" class=""><span class="fw-600">Reference ID</span>: OUJICE <span class="float-end"><span class="fw-600">Date of Booking</span>: 05 Aug, 2020 at 06:50 PM</span></td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="fw-600 col-2">Transaction ID</td>
-            <td class="col-4">3912912704</td>
-            <td class="fw-600 col-2">PNR</td>
-            <td class="col-4">2213335256</td>
-          </tr>
-          <tr>
-            <td class="fw-600">Train No & Name</td>
-            <td>4211 / Intercity Exp.</td>
-            <td class="fw-600">Date of Journey</td>
-            <td>10 Aug, 2020</td>
-          </tr>
-          <tr>
-            <td class="fw-600">Class</td>
-            <td>Ac Chair</td>
-            <td class="fw-600">Date of Boarding</td>
-            <td>10 Aug, 2020</td>
-          </tr>
-          <tr>
-            <td class="fw-600">From</td>
-            <td>Delhi</td>
-            <td class="fw-600">To</td>
-            <td>Ahmedabad</td>
-          </tr>
-          <tr>
-            <td class="fw-600">Departure</td>
-            <td>06:00 AM</td>
-            <td class="fw-600">Total Fare</td>
-            <td>$1195.00</td>
-          </tr>
-          <tr>
-            <td class="fw-600">Distance</td>
-            <td>946 km</td>
-            <td class="fw-600">Quota</td>
-            <td>General (GN)</td>
-          </tr>
-          <tr>
-            <td class="fw-600">Adult</td>
-            <td>1</td>
-            <td class="fw-600">Child</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <h4 class="text-4 mt-2">Passenger Details</h4>
-    <div class="table-responsive">
-      <table class="table table-bordered text-1 table-sm">
-        <thead>
-          <tr>
-            <th>S. NO.</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Seat No.</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Smith Rhodes</td>
-            <td>31</td>
-            <td>Male</td>
-            <td>C2, 25</td>
-            <td>Confirm</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="table-responsive">
-      <table class="table table-bordered text-1 table-sm">
-        <tbody>
-          <tr>
-            <td class="col-4"><span class="fw-600">Agent:</span> Koice Inc</td>
-            <td class="col-4"><span class="fw-600">Phone No:</span> 9898989898</td>
-            <td class="col-4"><span class="fw-600">Email Id:</span> info@Koice.gmail.com</td>
-          </tr>
-          <tr>
-            <td colspan="3"><span class="fw-600">Adress:</span> 4th Floor, Plot No.22, Above Public Park, 145 Murphy Canyon Rd, Suite 100-18, San Diego CA 2028.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <h4 class="text-4 mt-2">Fare Details</h4>
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        <tbody>
-          <tr>
-            <td class="col-9 fw-500 text-end"><strong>Basic Fare:</strong></td>
-            <td class="col-3 text-end">$980.00</td>
-          </tr>
-          <tr>
-            <td class="col-9 fw-500 text-end"><strong>Reservation Charge:</strong></td>
-            <td class="col-3 text-end">$215</td>
-          </tr>
-          <tr>
-            <td class="col-9 fw-500 text-end"><strong>Total Amount:</strong></td>
-            <td class="col-3 text-end">$1195.00</td>
-          </tr>
-          <tr>
-            <td class="col-9 fw-500 text-end"><strong>Total Amount:</strong></td>
-            <td class="col-3 text-end">$1195.00</td>
-          </tr>
-          <tr>
-            <td class="col-9 fw-500 text-end"><strong>Total Amount:</strong></td>
-            <td class="col-3 text-end">$1195.00</td>
-          </tr>
-        
-        </tbody>
-      </table>
-    </div>
-    <h4 class="text-4 mt-2">Important Instruction</h4>
-    <ul class="text-1">
-      <li>One of the passengers in an e-ticket should carry proof of identification during the train journey.</li>
-      <li>The input for the proof of identity in case of cancellation/partial cancellation is also not required now.</li>
-      <li>The passenger should also carry the Electronic Reservation Slip (ERS) during the train journey failing which a penalty of $10 will be charged by the TTE/Conductor Guard.</li>
-    </ul>
-  </main>
-  <footer class="text-center">
-    <hr>
-    <p><strong>Koice Inc.</strong><br>
-      4th Floor, Plot No.22, Above Public Park, 145 Murphy Canyon Rd,<br>
-      Suite 100-18, San Diego CA 2028. </p>
-    <hr>
-    <p class="text-1"><strong>NOTE :</strong> This is computer generated receipt and does not require physical signature.</p>
-    <div class="btn-group btn-group-sm d-print-none"> <a href="javascript:window.print()" class="btn btn-light border text-black-50 shadow-none"><i class="fa fa-print"></i> Print</a> <a href="" class="btn btn-light border text-black-50 shadow-none"><i class="fa fa-download"></i> Download</a> </div>
-  </footer>
-</div>
+      <hr>
+    </header>
+    <main>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-7">
+          <p class="mb-0 text-dark">hamed</p>
+          <p class="mb-0 text-dark">Mobile: 07533495969</p>
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <div class="table-responsive">
+            <table class="table text-1 table-sm p-0 border-0 " >
+              <tbody class="invoice">
+                <tr >
+                  <td class="p-0"><h5>Invoice</h5></td>
+                  <td class="p-0"><h5>1811</h5></td>
+                </tr>
+                <tr>
+                  <td class="p-0">Invoice Date:
+                  </td>
+                  <td class="p-0">08/12/2022</td>
+                </tr>
+                <tr>
+                  <td class="p-0" >Account No:</td>
+                  <td class="p-0">ZZZ091</td>
+                </tr>
+                <tr>
+                  <td class="p-0">Order Ref:</td>
+                  <td class="p-0"></td>
+                </tr>
+                <tr>
+                  <td class="p-0">Date of Work</td>
+                  <td class="p-0">08/12/2022</td>
+                </tr>
+                <tr>
+                  <td class="p-0">Payment Date:</td>
+                  <td class="p-0"></td>
+                </tr>
+                <tr>
+                  <td class="p-0">Payment Method:</td>
+                  <td class="p-0"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered text-1 table-sm table-striped">
+          <tbody class="text-center">
+            <tr>
+              <td class="col-2">Registration</td>
+              <td class="col-2">Make</td>
+              <td class="col-2">Model</td>
+              <td class="col-2">Chassis Number</td>
+              <td class="col-2">Mileage</td>
+            </tr>
+            <tr>
+              <td class="fw-500 text-dark">SM18 EBP</td>
+              <td class="fw-500 text-dark">Audi</td>
+              <td class="fw-500 text-dark">A5 S5 Tfsi Quattro</td>
+              <td class="fw-500 text-dark">WAUZZZF5XJA085779</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-2">Engin No</td>
+              <td class="col-2">Engin Code</td>
+              <td class="col-2">Key Code</td>
+              <td class="col-2">Rate Reg</td>
+              <td class="col-2">Paint Code</td>
+            </tr>
+
+            <tr>
+              <td class="fw-500 text-dark">CWGD067945</td>
+              <td class="fw-500 text-dark">CWGD</td>
+              <td></td>
+              <td class="fw-500 text-dark">30/05/2018</td>
+              <td class="fw-500 text-dark">P</td>
+
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered text-1 table-sm table-striped">
+          <tbody>
+            <tr>
+              <td class="col-5">Labour</td>
+              <td class="text-center">Qty</td>
+              <td class="text-center">Unit</td>
+              <td class="text-center">D</td>
+              <td class="text-end">Sub Total</td>
+            </tr>
+            <tr>
+              <td class="col-5"></td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered text-1 table-sm">
+          <tbody>
+            <tr style="background-color: rgba(0, 0, 0, 0.05);">
+              <td class="col-4">Parts</td>
+              <td class="text-end">Part No</td>
+              <td class="text-center">Qty</td>
+              <td class="text-center">Unit</td>
+              <td class="text-center">D</td>
+              <td class="text-end">Sub Total</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+            <tr>
+              <td class="col-4 fw-500 text-dark">air bag</td>
+              <td class="fw-500 text-dark">AIR BAG</td>
+              <td class="fw-500 text-dark text-center">1</td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+              <td></td>
+              <td class="fw-500 text-dark text-end">2600,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row justify-content-end">
+        <div class=" col-md-7 col-lg-5">
+          <div class="table-responsive">
+            <table class="table table-bordered text-1 table-sm p-0">
+              <tbody>
+                <tr>
+                  <td class="p-1">Labour</td>
+                  <td class="p-1">2,600.00</td>
+                </tr>
+                <tr>
+                  <td class="p-1">Labour</td>
+                  <td class="p-1">2,600.00</td>
+                </tr>
+                <tr>
+                  <td class="fw-500 text-dark p-1">SubTotal</td>
+                  <td class="p-1">2,600.00</td>
+                </tr>
+                <tr style="background-color: rgba(0, 0, 0, 0.05);">
+                  <td class="fw-500 text-dark p-1">Total</td>
+                  <td class="p-1">2,600.00</td>
+                </tr>
+                <tr>
+                  <td class="fw-500 text-dark p-1">Balance</td>
+                  <td class="p-1">2,600.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+     
+    </main>
+    <footer class="text-center mt-5 pt-5">
+      <hr>
+    </footer>
+  </div>
 </body>
+
 </html>
